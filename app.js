@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/users', userRouter);
 
 mongoose.connect(
-  "mongodb+srv://admin:yNOQ7GAkC0X0u007@users.ana4s8b.mongodb.net/?retryWrites=true&w=majority"
+  `mongodb+srv://admin:<your_mongo_db_password>@users.ana4s8b.mongodb.net/?retryWrites=true&w=majority`
 ).then(
     () => app.listen(
         port,
